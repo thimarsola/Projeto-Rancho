@@ -1,0 +1,32 @@
+{
+  "name": "projeto-rancho",
+  "version": "1.0.0",
+  "description": "Projeto Rancho do Comanche",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thimarsola/Projeto-Rancho.git"
+  },
+  "author": "Thiago Marsola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thimarsola/Projeto-Rancho/issues"
+  },
+  "homepage": "https://github.com/thimarsola/Projeto-Rancho#readme",
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
+  },
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "breakpoint-sass": "^2.7.1",
+    "normalize-css": "^2.3.1",
+    "wowjs": "^1.1.3"
+  }
+}
