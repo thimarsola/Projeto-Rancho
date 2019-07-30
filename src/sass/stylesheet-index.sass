@@ -1,0 +1,14 @@
+@import mixins
+@import body
+@import menu
+@import footer
+
+header
+	#carouselIndicators
+		.carousel-inner
+			.carousel-item
+				img
+					+breakpoint($tablet)
+					height: 70vh !important
+					object-fit: cover !important
+

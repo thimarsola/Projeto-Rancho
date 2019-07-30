@@ -1,0 +1,17 @@
+@import mixins
+
+nav
+	min-height: 6.25rem
+	font-weight: $bold
+	.navbar-brand
+		img
+			height: 4.785rem !important
+	ul
+		li
+			height: 2rem
+			&:hover
+				border-bottom: 2px solid $rc-color1
+			+breakpoint($tablet)
+				text-align: center
+			a
+				padding: .5rem 1.1875rem !important
