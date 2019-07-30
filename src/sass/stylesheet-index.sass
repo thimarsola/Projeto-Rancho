@@ -11,4 +11,40 @@ header
 					+breakpoint($tablet)
 					height: 70vh !important
 					object-fit: cover !important
-
+main
+	h2
+		font:
+			size: 2.5rem
+			weight: $medium
+	#sobre
+		margin-top: 6.25rem
+		h2
+			margin-bottom: 1rem
+		img
+			margin: 0 auto 1.5rem auto
+			display: flex
+			justify-content: center
+		.row
+			div
+				&:nth-child(1)
+					img
+						margin-bottom: 0 !important
+						height: 90%
+						width: 100%
+						object-fit: cover !important
+						+breakpoint($tablet)
+							height: 100%
+						+breakpoint($celular)
+							width: 100%
+				&:nth-child(2)
+					p
+						font:
+							weight: $regular
+							size: 1.125rem
+						margin: 1.5rem 0
+						&:nth-child(1)
+							margin-top: 0 !important
+							+breakpoint($celular)
+								margin-top: 2rem !important
+						&:nth-child(4)
+							margin-bottom: 0 !important

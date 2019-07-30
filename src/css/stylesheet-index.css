@@ -45215,3 +45215,66 @@ header #carouselIndicators .carousel-inner .carousel-item img {
   -o-object-fit: cover !important;
      object-fit: cover !important;
 }
+
+main h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+main #sobre {
+  margin-top: 6.25rem;
+}
+
+main #sobre h2 {
+  margin-bottom: 1rem;
+}
+
+main #sobre img {
+  margin: 0 auto 1.5rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #sobre .row div:nth-child(1) img {
+  margin-bottom: 0 !important;
+  height: 90%;
+  width: 100%;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+
+@media (max-width: 768px) {
+  main #sobre .row div:nth-child(1) img {
+    height: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  main #sobre .row div:nth-child(1) img {
+    width: 100%;
+  }
+}
+
+main #sobre .row div:nth-child(2) p {
+  font-weight: 300;
+  font-size: 1.125rem;
+  margin: 1.5rem 0;
+}
+
+main #sobre .row div:nth-child(2) p:nth-child(1) {
+  margin-top: 0 !important;
+}
+
+@media (max-width: 576px) {
+  main #sobre .row div:nth-child(2) p:nth-child(1) {
+    margin-top: 2rem !important;
+  }
+}
+
+main #sobre .row div:nth-child(2) p:nth-child(4) {
+  margin-bottom: 0 !important;
+}
