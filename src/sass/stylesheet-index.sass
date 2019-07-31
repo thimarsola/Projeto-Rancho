@@ -20,6 +20,11 @@ main
 		margin-top: 6.25rem
 		h2
 			margin-bottom: 1rem
+		p
+			font:
+				weight: $regular
+				size: 1.125rem
+			margin: 0
 		img
 			margin: 0 auto 1.5rem auto
 			display: flex
@@ -38,9 +43,6 @@ main
 							width: 100%
 				&:nth-child(2)
 					p
-						font:
-							weight: $regular
-							size: 1.125rem
 						margin: 1.5rem 0
 						&:nth-child(1)
 							margin-top: 0 !important
@@ -48,3 +50,92 @@ main
 								margin-top: 2rem !important
 						&:nth-child(4)
 							margin-bottom: 0 !important
+	.paralaxe-topo
+		height: 20rem
+		background:
+			image: url("../assets/paralax-01.jpg")
+			size: cover
+			position: center
+			attachment: fixed
+			repeat: no-repeat
+			
+	#restaurante
+		margin-top: 6.25rem
+		h2
+			margin-bottom: 1rem
+		h6
+			font:
+				size: 1.125rem
+				weight: $medium
+		p
+			font:
+				weight: $regular
+				size: 1.125rem
+			margin: 0
+		img
+			margin: 0 auto 1.5rem auto
+			display: flex
+			justify-content: center
+		.row
+			div
+				&:nth-child(2)
+					img
+						margin-bottom: 0 !important
+						height: 100%
+						width: 100%
+						object-fit: cover !important
+						+breakpoint($tablet)
+							height: 100%
+						+breakpoint($celular)
+							width: 100%
+		#cardapio
+			margin: 0 !important
+			padding: 0 !important
+			display: inline-flex
+			width: 100%
+			+breakpoint($celular)
+				display: block
+			.destaque-cardapio
+				width: 60%
+				+breakpoint($tablet)
+					width: 50%
+				+breakpoint($celular)
+					margin: 0
+					width: 100%
+				img
+					margin: 0
+					height: 100%
+					width: 100%
+					object:
+						fit: cover !important
+						position: center
+					+breakpoint($tablet)
+						object-position: right
+					+breakpoint($celular)
+						display: none
+			.texto-cardapio
+				width: 40%
+				padding: 4rem
+				background-color: $rc-color1
+				display: flex
+				align-items: center
+				+breakpoint($desktop)
+					padding: 2.125rem
+				+breakpoint($tablet)
+					width: 50%
+				+breakpoint($celular)
+					width: 100%
+				.conteudo-texto
+					color: $rc-color3
+					p
+						font:
+							size: 1rem
+							weight: $regular
+					h2
+						font:
+							size: 2.5rem !important
+							weight: $bold !important
+					h6
+						font:
+							size: 1.375rem !important
+							weight: $regular
