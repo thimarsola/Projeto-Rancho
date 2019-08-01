@@ -88,14 +88,14 @@ main
 							height: 100%
 						+breakpoint($celular)
 							width: 100%
-		#cardapio
+		#cardapio,#musica
 			margin: 0 !important
 			padding: 0 !important
-			display: inline-flex
+			display: flex
 			width: 100%
 			+breakpoint($celular)
 				display: block
-			.destaque-cardapio
+			.destaque-cardapio, .destaque-musica
 				width: 60%
 				+breakpoint($tablet)
 					width: 50%
@@ -104,6 +104,7 @@ main
 					width: 100%
 				img
 					margin: 0
+					padding: 
 					height: 100%
 					width: 100%
 					object:
@@ -113,7 +114,8 @@ main
 						object-position: right
 					+breakpoint($celular)
 						display: none
-			.texto-cardapio
+			.texto-cardapio, .texto-musica
+				margin: 0
 				width: 40%
 				padding: 4rem
 				background-color: $rc-color1
@@ -139,3 +141,12 @@ main
 						font:
 							size: 1.375rem !important
 							weight: $regular
+		#imgs-cardapio
+			display: flex
+			flex-wrap: wrap
+			img
+				margin: 0
+				padding: 0
+				width: calc(100%/4)
+				+breakpoint($celular)
+					width: calc(100%/2)

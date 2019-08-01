@@ -173,39 +173,39 @@ main #restaurante .row div:nth-child(2) img {
   }
 }
 
-main #restaurante #cardapio {
+main #restaurante #cardapio, main #restaurante #musica {
   margin: 0 !important;
   padding: 0 !important;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
 }
 
 @media (max-width: 576px) {
-  main #restaurante #cardapio {
+  main #restaurante #cardapio, main #restaurante #musica {
     display: block;
   }
 }
 
-main #restaurante #cardapio .destaque-cardapio {
+main #restaurante #cardapio .destaque-cardapio, main #restaurante #cardapio .destaque-musica, main #restaurante #musica .destaque-cardapio, main #restaurante #musica .destaque-musica {
   width: 60%;
 }
 
 @media (max-width: 768px) {
-  main #restaurante #cardapio .destaque-cardapio {
+  main #restaurante #cardapio .destaque-cardapio, main #restaurante #cardapio .destaque-musica, main #restaurante #musica .destaque-cardapio, main #restaurante #musica .destaque-musica {
     width: 50%;
   }
 }
 
 @media (max-width: 576px) {
-  main #restaurante #cardapio .destaque-cardapio {
+  main #restaurante #cardapio .destaque-cardapio, main #restaurante #cardapio .destaque-musica, main #restaurante #musica .destaque-cardapio, main #restaurante #musica .destaque-musica {
     margin: 0;
     width: 100%;
   }
 }
 
-main #restaurante #cardapio .destaque-cardapio img {
+main #restaurante #cardapio .destaque-cardapio img, main #restaurante #cardapio .destaque-musica img, main #restaurante #musica .destaque-cardapio img, main #restaurante #musica .destaque-musica img {
   margin: 0;
   height: 100%;
   width: 100%;
@@ -216,19 +216,20 @@ main #restaurante #cardapio .destaque-cardapio img {
 }
 
 @media (max-width: 768px) {
-  main #restaurante #cardapio .destaque-cardapio img {
+  main #restaurante #cardapio .destaque-cardapio img, main #restaurante #cardapio .destaque-musica img, main #restaurante #musica .destaque-cardapio img, main #restaurante #musica .destaque-musica img {
     -o-object-position: right;
        object-position: right;
   }
 }
 
 @media (max-width: 576px) {
-  main #restaurante #cardapio .destaque-cardapio img {
+  main #restaurante #cardapio .destaque-cardapio img, main #restaurante #cardapio .destaque-musica img, main #restaurante #musica .destaque-cardapio img, main #restaurante #musica .destaque-musica img {
     display: none;
   }
 }
 
-main #restaurante #cardapio .texto-cardapio {
+main #restaurante #cardapio .texto-cardapio, main #restaurante #cardapio .texto-musica, main #restaurante #musica .texto-cardapio, main #restaurante #musica .texto-musica {
+  margin: 0;
   width: 40%;
   padding: 4rem;
   background-color: #FFB800;
@@ -241,38 +242,58 @@ main #restaurante #cardapio .texto-cardapio {
 }
 
 @media (max-width: 1366px) {
-  main #restaurante #cardapio .texto-cardapio {
+  main #restaurante #cardapio .texto-cardapio, main #restaurante #cardapio .texto-musica, main #restaurante #musica .texto-cardapio, main #restaurante #musica .texto-musica {
     padding: 2.125rem;
   }
 }
 
 @media (max-width: 768px) {
-  main #restaurante #cardapio .texto-cardapio {
+  main #restaurante #cardapio .texto-cardapio, main #restaurante #cardapio .texto-musica, main #restaurante #musica .texto-cardapio, main #restaurante #musica .texto-musica {
     width: 50%;
   }
 }
 
 @media (max-width: 576px) {
-  main #restaurante #cardapio .texto-cardapio {
+  main #restaurante #cardapio .texto-cardapio, main #restaurante #cardapio .texto-musica, main #restaurante #musica .texto-cardapio, main #restaurante #musica .texto-musica {
     width: 100%;
   }
 }
 
-main #restaurante #cardapio .texto-cardapio .conteudo-texto {
+main #restaurante #cardapio .texto-cardapio .conteudo-texto, main #restaurante #cardapio .texto-musica .conteudo-texto, main #restaurante #musica .texto-cardapio .conteudo-texto, main #restaurante #musica .texto-musica .conteudo-texto {
   color: #fff;
 }
 
-main #restaurante #cardapio .texto-cardapio .conteudo-texto p {
+main #restaurante #cardapio .texto-cardapio .conteudo-texto p, main #restaurante #cardapio .texto-musica .conteudo-texto p, main #restaurante #musica .texto-cardapio .conteudo-texto p, main #restaurante #musica .texto-musica .conteudo-texto p {
   font-size: 1rem;
   font-weight: 300;
 }
 
-main #restaurante #cardapio .texto-cardapio .conteudo-texto h2 {
+main #restaurante #cardapio .texto-cardapio .conteudo-texto h2, main #restaurante #cardapio .texto-musica .conteudo-texto h2, main #restaurante #musica .texto-cardapio .conteudo-texto h2, main #restaurante #musica .texto-musica .conteudo-texto h2 {
   font-size: 2.5rem !important;
   font-weight: 500 !important;
 }
 
-main #restaurante #cardapio .texto-cardapio .conteudo-texto h6 {
+main #restaurante #cardapio .texto-cardapio .conteudo-texto h6, main #restaurante #cardapio .texto-musica .conteudo-texto h6, main #restaurante #musica .texto-cardapio .conteudo-texto h6, main #restaurante #musica .texto-musica .conteudo-texto h6 {
   font-size: 1.375rem !important;
   font-weight: 300;
+}
+
+main #restaurante #imgs-cardapio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main #restaurante #imgs-cardapio img {
+  margin: 0;
+  padding: 0;
+  width: calc(100%/4);
+}
+
+@media (max-width: 576px) {
+  main #restaurante #imgs-cardapio img {
+    width: calc(100%/2);
+  }
 }
