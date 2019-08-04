@@ -14,6 +14,7 @@ header
 main
 	h2
 		font:
+			style: italic
 			size: 2.5rem
 			weight: $medium
 	#sobre
@@ -150,3 +151,44 @@ main
 				width: calc(100%/4)
 				+breakpoint($celular)
 					width: calc(100%/2)
+	#atracoes
+		.card-atracoes
+			padding: 0 !important
+			margin: 0 !important
+			border-bottom: 10px solid $rc-color1
+			img
+				padding: 0 !important
+				margin: 0 !important
+				min-height: 25rem !important
+				object:
+					fit: cover
+					position: center
+				+breakpoint($celular)
+					object-position: 20%
+		.apresentacao-atracoes
+			.container
+				transform: translateY(-40%)
+				padding: 2.5rem 0
+				background:
+					color: rgba(255,255,255,.85)
+				box-shadow: 0 3px 6px rgba(0,0,0,.2)
+				+breakpoint($celular)
+					transform: translateY(-30%)
+				h1 
+					text:
+						align: center
+					font:
+						style: italic
+						size: 2.5rem
+						weight: $regular
+				img
+					margin: 0 auto 1.5rem auto
+					display: flex
+					justify-content: center
+				.texto-atracoes
+					padding: 0 6rem
+					+breakpoint($celular)
+						padding: 0 2rem
+					p
+						text:
+							align: justify 
