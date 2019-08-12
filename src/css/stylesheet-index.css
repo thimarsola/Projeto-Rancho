@@ -299,6 +299,10 @@ main #restaurante #imgs-cardapio img {
   }
 }
 
+main #atracoes {
+  padding-bottom: 5.625rem;
+}
+
 main #atracoes .card-atracoes {
   padding: 0 !important;
   margin: 0 !important;
@@ -397,7 +401,7 @@ main #atracoes .passeio-cavalo .container .row .col-lg-6:nth-child(1) img {
 
 @media (max-width: 768px) {
   main #atracoes .passeio-cavalo .container .row .col-lg-6:nth-child(1) img {
-    height: 22rem;
+    height: 18rem;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: top;
@@ -461,6 +465,185 @@ main #atracoes .passeio-cavalo .container .row .col-lg-6:nth-child(2) .conteudo-
 }
 
 main #atracoes .passeio-cavalo .container .row .col-lg-6:nth-child(2) .conteudo-texto p {
+  margin: 0;
+  font-style: normal;
+  font-size: .875rem;
+  font-weight: 300;
+  text-align: justify;
+}
+
+main #atracoes .passeio-charrete, main #atracoes .passeio-quadriciculo, main #atracoes .playground {
+  margin-top: 3rem;
+}
+
+main #atracoes .passeio-charrete .container, main #atracoes .passeio-quadriciculo .container, main #atracoes .playground .container {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+main #atracoes .passeio-charrete .container .row .col-lg-6:nth-child(2), main #atracoes .passeio-quadriciculo .container .row .col-lg-6:nth-child(2), main #atracoes .playground .container .row .col-lg-6:nth-child(2) {
+  margin: 0;
+  padding: 0;
+}
+
+main #atracoes .passeio-charrete .container .row .col-lg-6:nth-child(2) img, main #atracoes .passeio-quadriciculo .container .row .col-lg-6:nth-child(2) img, main #atracoes .playground .container .row .col-lg-6:nth-child(2) img {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  main #atracoes .passeio-charrete .container .row .col-lg-6:nth-child(2) img, main #atracoes .passeio-quadriciculo .container .row .col-lg-6:nth-child(2) img, main #atracoes .playground .container .row .col-lg-6:nth-child(2) img {
+    height: 18rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+  }
+}
+
+@media (max-width: 576px) {
+  main #atracoes .passeio-charrete .container .row .col-lg-6:nth-child(2) img, main #atracoes .passeio-quadriciculo .container .row .col-lg-6:nth-child(2) img, main #atracoes .playground .container .row .col-lg-6:nth-child(2) img {
+    height: 15rem;
+  }
+}
+
+main #atracoes .passeio-charrete .container .row .col-lg-6:nth-child(1), main #atracoes .passeio-quadriciculo .container .row .col-lg-6:nth-child(1), main #atracoes .playground .container .row .col-lg-6:nth-child(1) {
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  main #atracoes .passeio-charrete .container .row .col-lg-6:nth-child(1), main #atracoes .passeio-quadriciculo .container .row .col-lg-6:nth-child(1), main #atracoes .playground .container .row .col-lg-6:nth-child(1) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+main #atracoes .passeio-charrete .container .row .col-lg-6:nth-child(1) .conteudo-texto, main #atracoes .passeio-quadriciculo .container .row .col-lg-6:nth-child(1) .conteudo-texto, main #atracoes .playground .container .row .col-lg-6:nth-child(1) .conteudo-texto {
+  height: 100%;
+  padding: 2rem 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 576px) {
+  main #atracoes .passeio-charrete .container .row .col-lg-6:nth-child(1) .conteudo-texto, main #atracoes .passeio-quadriciculo .container .row .col-lg-6:nth-child(1) .conteudo-texto, main #atracoes .playground .container .row .col-lg-6:nth-child(1) .conteudo-texto {
+    padding: 3rem 1rem;
+  }
+}
+
+main #atracoes .passeio-charrete .container .row .col-lg-6:nth-child(1) .conteudo-texto h3, main #atracoes .passeio-quadriciculo .container .row .col-lg-6:nth-child(1) .conteudo-texto h3, main #atracoes .playground .container .row .col-lg-6:nth-child(1) .conteudo-texto h3 {
+  font-style: normal;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+main #atracoes .passeio-charrete .container .row .col-lg-6:nth-child(1) .conteudo-texto .divisor-titulo, main #atracoes .passeio-quadriciculo .container .row .col-lg-6:nth-child(1) .conteudo-texto .divisor-titulo, main #atracoes .playground .container .row .col-lg-6:nth-child(1) .conteudo-texto .divisor-titulo {
+  margin: .75rem 0 1.25rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #atracoes .passeio-charrete .container .row .col-lg-6:nth-child(1) .conteudo-texto p, main #atracoes .passeio-quadriciculo .container .row .col-lg-6:nth-child(1) .conteudo-texto p, main #atracoes .playground .container .row .col-lg-6:nth-child(1) .conteudo-texto p {
+  margin: 0;
+  font-style: normal;
+  font-size: .875rem;
+  font-weight: 300;
+  text-align: justify;
+}
+
+main #atracoes .pesca-esportiva, main #atracoes .tirolesa {
+  margin-top: 3rem;
+}
+
+main #atracoes .pesca-esportiva .container, main #atracoes .tirolesa .container {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+main #atracoes .pesca-esportiva .container .row .col-lg-6:nth-child(1), main #atracoes .tirolesa .container .row .col-lg-6:nth-child(1) {
+  margin: 0;
+  padding: 0;
+}
+
+main #atracoes .pesca-esportiva .container .row .col-lg-6:nth-child(1) img, main #atracoes .tirolesa .container .row .col-lg-6:nth-child(1) img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  main #atracoes .pesca-esportiva .container .row .col-lg-6:nth-child(1) img, main #atracoes .tirolesa .container .row .col-lg-6:nth-child(1) img {
+    height: 18rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+  }
+}
+
+@media (max-width: 576px) {
+  main #atracoes .pesca-esportiva .container .row .col-lg-6:nth-child(1) img, main #atracoes .tirolesa .container .row .col-lg-6:nth-child(1) img {
+    height: 15rem;
+  }
+}
+
+main #atracoes .pesca-esportiva .container .row .col-lg-6:nth-child(2), main #atracoes .tirolesa .container .row .col-lg-6:nth-child(2) {
+  background-color: #fff;
+}
+
+main #atracoes .pesca-esportiva .container .row .col-lg-6:nth-child(2) .conteudo-texto, main #atracoes .tirolesa .container .row .col-lg-6:nth-child(2) .conteudo-texto {
+  height: 100%;
+  padding: 2rem 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 576px) {
+  main #atracoes .pesca-esportiva .container .row .col-lg-6:nth-child(2) .conteudo-texto, main #atracoes .tirolesa .container .row .col-lg-6:nth-child(2) .conteudo-texto {
+    padding: 3rem 1rem;
+  }
+}
+
+main #atracoes .pesca-esportiva .container .row .col-lg-6:nth-child(2) .conteudo-texto h3, main #atracoes .tirolesa .container .row .col-lg-6:nth-child(2) .conteudo-texto h3 {
+  font-style: normal;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+main #atracoes .pesca-esportiva .container .row .col-lg-6:nth-child(2) .conteudo-texto .divisor-titulo, main #atracoes .tirolesa .container .row .col-lg-6:nth-child(2) .conteudo-texto .divisor-titulo {
+  margin: .75rem 0 1.25rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #atracoes .pesca-esportiva .container .row .col-lg-6:nth-child(2) .conteudo-texto p, main #atracoes .tirolesa .container .row .col-lg-6:nth-child(2) .conteudo-texto p {
   margin: 0;
   font-style: normal;
   font-size: .875rem;

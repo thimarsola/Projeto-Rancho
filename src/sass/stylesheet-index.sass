@@ -152,6 +152,7 @@ main
 				+breakpoint($celular)
 					width: calc(100%/2)
 	#atracoes
+		padding-bottom: 5.625rem
 		.card-atracoes
 			padding: 0 !important
 			margin: 0 !important
@@ -209,7 +210,7 @@ main
 							img
 								width: 100%
 								+breakpoint($tablet)
-									height: 22rem
+									height: 18rem
 									object:
 										fit: cover
 										position: top
@@ -253,3 +254,103 @@ main
 										weight: $regular
 									text:
 										align: justify
+		.passeio-charrete, .passeio-quadriciculo, .playground
+			margin-top: 3rem
+			.container
+				box-shadow: 0 3px 6px rgba(0,0,0,.2)
+				.row
+					.col-lg-6
+						&:nth-child(2)
+							margin: 0
+							padding: 0
+							img
+								order: 2
+								width: 100%
+								+breakpoint($tablet)
+									height: 18rem
+									object:
+										fit: cover
+										position: top
+								+breakpoint($celular)
+									height: 15rem
+						&:nth-child(1)
+							background:
+								color: $rc-color3
+							+breakpoint($tablet)
+								order: 1
+							.conteudo-texto
+								height: 100%
+								padding: 2rem 2.5rem
+								display: flex
+								flex-direction: column
+								justify-content: center
+								+breakpoint($celular)
+									padding: 3rem 1rem
+								h3
+									font:
+										style: normal
+										size: 1.25rem
+										weight: $medium
+									text:
+										align: center
+								.divisor-titulo
+									margin: .75rem 0 1.25rem 0
+									display: flex
+									justify-content: center
+								p
+									margin: 0
+									font:
+										style: normal
+										size: .875rem
+										weight: $regular
+									text:
+										align: justify
+		.pesca-esportiva, .tirolesa
+			margin-top: 3rem
+			.container
+				box-shadow: 0 3px 6px rgba(0,0,0,.2)
+				.row
+					.col-lg-6
+						&:nth-child(1)
+							margin: 0
+							padding: 0
+							img
+								width: 100%
+								+breakpoint($tablet)
+									height: 18rem
+									object:
+										fit: cover
+										position: top
+								+breakpoint($celular)
+									height: 15rem
+						&:nth-child(2)
+							background:
+								color: $rc-color3
+							.conteudo-texto
+								height: 100%
+								padding: 2rem 2.5rem
+								display: flex
+								flex-direction: column
+								justify-content: center
+								+breakpoint($celular)
+									padding: 3rem 1rem
+								h3
+									font:
+										style: normal
+										size: 1.25rem
+										weight: $medium
+									text:
+										align: center
+								.divisor-titulo
+									margin: .75rem 0 1.25rem 0
+									display: flex
+									justify-content: center
+								p
+									margin: 0
+									font:
+										style: normal
+										size: .875rem
+										weight: $regular
+									text:
+										align: justify
+	
