@@ -157,6 +157,7 @@ main
 			margin: 0 !important
 			border-bottom: 10px solid $rc-color1
 			img
+				width: 100%
 				padding: 0 !important
 				margin: 0 !important
 				min-height: 25rem !important
@@ -167,28 +168,88 @@ main
 					object-position: 20%
 		.apresentacao-atracoes
 			.container
-				transform: translateY(-40%)
-				padding: 2.5rem 0
-				background:
-					color: rgba(255,255,255,.85)
-				box-shadow: 0 3px 6px rgba(0,0,0,.2)
-				+breakpoint($celular)
-					transform: translateY(-30%)
-				h1 
-					text:
-						align: center
-					font:
-						style: italic
-						size: 2.5rem
-						weight: $regular
-				img
-					margin: 0 auto 1.5rem auto
-					display: flex
-					justify-content: center
-				.texto-atracoes
-					padding: 0 6rem
+				&:nth-child(1)
+					position: relative
+					transform: translateY(-40%)
+					padding: 2.5rem 0
+					background:
+						color: rgba(255,255,255,.85)
+					box-shadow: 0 3px 6px rgba(0,0,0,.2)
 					+breakpoint($celular)
-						padding: 0 2rem
-					p
+						transform: translateY(-30%)
+					h1 
 						text:
-							align: justify 
+							align: center
+						font:
+							style: italic
+							size: 2.5rem
+							weight: $regular
+					img
+						margin: 0 auto 1.5rem auto
+						display: flex
+						justify-content: center
+					.texto-atracoes
+						padding: 0 6rem
+						+breakpoint($celular)
+							padding: 0 2rem
+						p
+							text:
+								align: justify
+		.passeio-cavalo
+			margin-top: -5rem
+			+breakpoint($celular)
+				margin-top: -4rem
+			.container
+				box-shadow: 0 3px 6px rgba(0,0,0,.2)
+				.row
+					.col-lg-6
+						&:nth-child(1)
+							margin: 0
+							padding: 0
+							img
+								width: 100%
+								+breakpoint($tablet)
+									height: 22rem
+									object:
+										fit: cover
+										position: top
+								+breakpoint($celular)
+									height: 15rem
+						&:nth-child(2)
+							background:
+								color: $rc-color3
+							.conteudo-texto
+								height: 100%
+								padding: 2rem 2.5rem
+								display: flex
+								flex-direction: column
+								justify-content: center
+								+breakpoint($celular)
+									padding: 3rem 1rem
+								h3
+									font:
+										style: normal
+										size: 1.25rem
+										weight: $medium
+									text:
+										align: center
+								.divisor-titulo
+									margin: .75rem 0 1.25rem 0
+									display: flex
+									justify-content: center
+								ul
+									li
+										font:
+											style: normal
+											size: .875rem
+											weight: $regular
+										text:
+											align: justify
+								p
+									margin: 0
+									font:
+										style: normal
+										size: .875rem
+										weight: $regular
+									text:
+										align: justify
