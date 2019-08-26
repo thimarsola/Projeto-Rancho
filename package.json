@@ -26,6 +26,7 @@
   "dependencies": {
     "animate.css": "^3.7.2",
     "breakpoint-sass": "^2.7.1",
+    "lightbox2": "^2.11.1",
     "normalize-css": "^2.3.1",
     "wowjs": "^1.1.3"
   }
