@@ -97,7 +97,7 @@ main
 			+breakpoint($celular)
 				display: block
 			.destaque-cardapio, .destaque-musica
-				width: 60%
+				width: 58%
 				+breakpoint($tablet)
 					width: 50%
 				+breakpoint($celular)
@@ -117,7 +117,7 @@ main
 						display: none
 			.texto-cardapio, .texto-musica
 				margin: 0
-				width: 40%
+				width: 42%
 				padding: 4rem
 				background-color: $rc-color1
 				display: flex
@@ -412,3 +412,75 @@ main
 						object:
 							fit: cover !important
 							position: center
+	#diferenciais
+		h2
+			margin-bottom: 1rem
+		h6
+			font:
+				style: italic
+				size: 1.125rem
+				weight: $medium
+		p
+			font:
+				weight: $regular
+				size: 1.125rem
+			margin: 0
+			a
+				color: $rc-color3
+		img
+			margin: 0 auto 1.5rem auto
+			display: flex
+			justify-content: center
+		#espaco-pet,#equoterapia
+			margin: 0 !important
+			padding: 0 !important
+			display: flex
+			width: 100%
+			+breakpoint($celular)
+				display: block
+			.destaque-pet, .destaque-equoterapia
+				width: 58%
+				+breakpoint($tablet)
+					width: 50%
+				+breakpoint($celular)
+					margin: 0
+					width: 100%
+				img
+					margin: 0
+					padding: 
+					height: 100%
+					width: 100%
+					object:
+						fit: cover !important
+						position: center
+					+breakpoint($tablet)
+						object-position: right
+					+breakpoint($celular)
+						display: none
+			.texto-pet, .texto-equoterapia
+				margin: 0
+				width: 42%
+				padding: 4rem
+				background-color: $rc-color1
+				display: flex
+				align-items: center
+				+breakpoint($desktop)
+					padding: 2.125rem
+				+breakpoint($tablet)
+					width: 50%
+				+breakpoint($celular)
+					width: 100%
+				.conteudo-texto
+					color: $rc-color3
+					p
+						font:
+							size: 1rem
+							weight: $regular
+					h2
+						font:
+							size: 2.5rem !important
+							weight: $bold !important
+					h6
+						font:
+							size: 1.375rem !important
+							weight: $regular
