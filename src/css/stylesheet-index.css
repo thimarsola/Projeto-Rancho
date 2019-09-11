@@ -951,3 +951,25 @@ main #diferenciais #espaco-pet .texto-pet .conteudo-texto h6, main #diferenciais
   font-weight: 300;
   text-align: center;
 }
+
+#destaque-evento {
+  padding: 5.625rem 0;
+  background-image: url("../assets/img-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+}
+
+#destaque-evento h5 {
+  margin-bottom: 1.5625rem;
+  font-style: normal;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+#destaque-evento p {
+  font-style: italic;
+  font-size: 1.375rem;
+  font-weight: 300;
+}
