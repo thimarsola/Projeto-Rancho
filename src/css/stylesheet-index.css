@@ -41949,5 +41949,34 @@ main #contato .mapa iframe {
   width: 100% !important;
   height: 18.75rem !important;
 }
+main #contato .dados_funcionamento {
+  padding: 4.5rem 0;
+}
+main #contato .dados_funcionamento h6 {
+  margin-bottom: 1rem;
+  color: #FFB800;
+  font-style: normal;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+}
+main #contato .dados_funcionamento p {
+  margin: 0;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+}
+main #contato .dados_funcionamento a {
+  color: #505050;
+  margin: 0;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+}
+main #contato .dados_funcionamento .container .row .col-sm-6 div {
+  margin-bottom: 2rem;
+}
 
 /*# sourceMappingURL=stylesheet-index.css.map */
