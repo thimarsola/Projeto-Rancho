@@ -1,0 +1,41 @@
+@import mixins
+@import body
+@import menu
+@import footer
+
+header
+	padding-top: 21.875rem
+	background:
+		image: url("../assets/bg-header-galeria.jpg")
+		size: cover
+		position: center
+	+breakpoint($celular)
+		padding-top: 14rem
+main
+	padding: 5.625rem 0
+	h1
+		margin-bottom: 1rem
+	#galeria
+		width: 100%
+		.separador
+			margin: 0 auto 3.5rem auto
+			display: flex
+			justify-content: center
+		.row
+			div
+				margin: 1rem 0
+				a
+					margin: 0
+					padding: 0
+					img
+						border-radius: 10px
+						width: 100% !important
+						height: 100% !important
+						object:
+							fit: cover !important
+							position: center
+footer
+	background: 
+		image: url("../assets/img-footer-galeria.jpg")
+		size: cover
+		position: center

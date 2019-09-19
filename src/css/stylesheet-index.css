@@ -45210,6 +45210,45 @@ a.text-bgCopyright:hover, a.text-bgCopyright:focus {
   }
 }
 
+footer {
+  margin: 0;
+  padding: 16.2rem 0 0 0;
+}
+
+footer .direitos-autorais {
+  padding: 1rem 0;
+  background-color: rgba(64, 46, 0, 0.75);
+}
+
+footer .direitos-autorais p {
+  margin: 0;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+}
+
+footer .desenvolvimento {
+  padding: .625rem 0;
+  background-color: #7CCE01;
+}
+
+footer .desenvolvimento p {
+  margin: 0;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+}
+
+footer .desenvolvimento p a {
+  color: #fff;
+  font-style: normal;
+  font-weight: 500;
+}
+
 header #carouselIndicators .carousel-inner .carousel-item img {
   height: 70vh !important;
   -o-object-fit: cover !important;
@@ -46410,43 +46449,7 @@ main #contato .dados_funcionamento .container .row .col-sm-6 div {
 }
 
 footer {
-  margin: 0;
-  padding: 16.2rem 0 0 0;
   background-image: url("../assets/bg-footer.jpg");
   background-size: cover;
   background-position: center;
-}
-
-footer .direitos-autorais {
-  padding: 1rem 0;
-  background-color: rgba(64, 46, 0, 0.75);
-}
-
-footer .direitos-autorais p {
-  margin: 0;
-  font-style: normal;
-  font-size: 1rem;
-  font-weight: 300;
-  text-align: center;
-  color: #fff;
-}
-
-footer .desenvolvimento {
-  padding: .625rem 0;
-  background-color: #7CCE01;
-}
-
-footer .desenvolvimento p {
-  margin: 0;
-  font-style: normal;
-  font-size: 1rem;
-  font-weight: 300;
-  text-align: center;
-  color: #fff;
-}
-
-footer .desenvolvimento p a {
-  color: #fff;
-  font-style: normal;
-  font-weight: 500;
 }
